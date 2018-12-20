@@ -1,0 +1,6 @@
+module Pods_YouYaoQi {
+  umbrella header "Pods-YouYaoQi-umbrella.h"
+
+  export *
+  module * { export * }
+}
