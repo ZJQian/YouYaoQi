@@ -24,6 +24,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isFirstIn;
 
 
+/**
+ 是否登录
+ */
++ (void)saveUserID:(NSString *)userId;
++ (BOOL)isLogin;
+
 
 /**
  广告页

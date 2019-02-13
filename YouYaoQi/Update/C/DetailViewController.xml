@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UIView layout="flex:1,marginTop:-20" attr="bgColor: white">
+    <UIView layout="height:64,width:100%" attr="bgColor:orange"></UIView>
+    
+    <UILabel name="" layout="" attr="fontSize:18,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:hello"/>
+    <UILabel name="" layout="" attr="fontSize:14,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:hello"/>
+    <UILabel name="" layout="" attr="fontSize:14,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:hello"/>
+    <UILabel name="" layout="" attr="fontSize:14,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:hello"/>
+</UIView>

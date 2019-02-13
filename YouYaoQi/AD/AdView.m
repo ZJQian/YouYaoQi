@@ -11,7 +11,7 @@
 #import <SDWebImage/SDWebImageManager.h>
 
 
-static NSInteger showTime = 3;
+static NSInteger showTime = 1;
 
 
 @interface AdView ()

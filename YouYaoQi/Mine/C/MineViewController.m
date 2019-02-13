@@ -12,6 +12,12 @@
 #import "WalletViewController.h"
 #import "CWebViewController.h"
 #import "AuthorViewController.h"
+#import "LoginViewController.h"
+#import "CBaseNavigationController.h"
+#import "MyVipViewController.h"
+#import "MyCoinViewController.h"
+#import "MySubscribeViewController.h"
+#import "MyFengYinViewController.h"
 
 static NSInteger item_tag = 100;
 @interface MineViewController ()<UINavigationControllerDelegate,UIScrollViewDelegate>
@@ -150,12 +156,17 @@ static NSInteger item_tag = 100;
     
     for (int i = 0; i < 2; i++) {
         UIView *v_item = [UIView new];
+        [v_item setUserInteractionEnabled:YES];
+        v_item.tag = 1000+i;
         [v_money addSubview:v_item];
         [v_item configureLayoutWithBlock:^(YGLayout * _Nonnull layout) {
             layout.isEnabled = YES;
             layout.justifyContent = YGJustifyCenter;
             layout.alignItems = YGAlignCenter;
         }];
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+        [v_item addGestureRecognizer:tap];
         
         UILabel *lb = [UILabel new];
         lb.text = @[@"未开通",@"余额0"][i];
@@ -232,12 +243,59 @@ static NSInteger item_tag = 100;
 }
 
 #pragma mark - action
+
+
+- (void)tapGesture:(UITapGestureRecognizer *)tap {
+    switch (tap.view.tag-1000) {
+        case 0:
+            {
+                MyVipViewController *vc = [[MyVipViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            break;
+            
+        default:
+            {
+                MyCoinViewController *vc = [[MyCoinViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            break;
+    }
+}
+
 - (void)tapAction:(UITapGestureRecognizer *)tap {
     
     switch (tap.view.tag-item_tag) {
+            
+        case 0:
+        {
+            if ([DefaultsUtil isLogin]) {
+                
+            } else {
+                
+                LoginViewController *vc = [[LoginViewController alloc] init];
+                CBaseNavigationController *nav = [[CBaseNavigationController alloc] initWithRootViewController:vc];
+                [self presentViewController:nav animated:YES completion:nil];
+            }
+        }
+            break;
         case 1:
         {
             WalletViewController *vc = [[WalletViewController alloc] initWithReuseIdentifier:@"walletCell" cellType:@"UITableViewCell"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case 2:
+        {
+            MySubscribeViewController *vc = [[MySubscribeViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case 3:
+        {
+            MyFengYinViewController *vc = [[MyFengYinViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;

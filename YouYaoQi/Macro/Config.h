@@ -20,7 +20,11 @@
 #define hexColorAlpha(colorValue,a) [UIColor colorWithHexString:colorValue alpha:(a)]
 
 
-#define Color_theme  hexColor(@"2cdd8f")
+#define Color_theme         hexColor(@"2cdd8f")
+#define Color_Title         hexColor(@"333333")
+#define Color_SubTitle      hexColor(@"666666")
+#define Color_Content       hexColor(@"999999")
+#define Color_Line          [[UIColor lightGrayColor] colorWithAlphaComponent:0.3]
 
 
 

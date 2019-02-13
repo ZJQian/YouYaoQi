@@ -9,6 +9,7 @@
 #import "UpdateItemViewController.h"
 #import "ComicModel.h"
 #import "UpdateItemCell.h"
+#import "DetailViewController.h"
 
 @interface UpdateItemViewController ()
 
@@ -29,6 +30,10 @@
         UpdateItemCell *c = cell;
         c.model = weakSelf.dataArray[indexPath.row];
         [c useCellFrameCacheWithIndexPath:indexPath tableView:weakSelf.cTableView];
+    };
+    self.didSelectCellConfig = ^(UITableView * _Nonnull table, NSIndexPath * _Nonnull indexPath) {
+        DetailViewController *vc = [[DetailViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
     };
     [self headerRefresh:YES];
     [self beginHeaderRefresh];

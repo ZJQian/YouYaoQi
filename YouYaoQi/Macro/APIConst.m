@@ -32,6 +32,6 @@ NSString *const  vipList            = @"/v3/appV3_3/ios/phone/list/vipList";
 NSString *const  newSubscribeList   = @"/v3/appV3_3/ios/phone/list/newSubscribeList";
 NSString *const  commonComicList    = @"/v3/appV3_3/ios/phone/list/commonComicList";
 NSString *const  hotkeywordsnew     = @"/v3/appV3_3/ios/phone/search/hotkeywordsnew";
-
+NSString *const  adLocat            = @"/v3/appV3_3/ios/phone/ad/adLocat";
 
 @end

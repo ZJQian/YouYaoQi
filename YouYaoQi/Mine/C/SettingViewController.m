@@ -8,7 +8,7 @@
 
 #import "SettingViewController.h"
 
-@interface SettingViewController ()<UINavigationControllerDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface SettingViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 
 @property (nonatomic, strong) UITableView      *           settingTableView;
@@ -25,7 +25,6 @@
     self.isCustomNav = YES;
     self.navView.lb_left.text = @"我的";
     self.navView.lb_navTitle.text = @"设置";
-    self.navigationController.delegate = self;
     [self.view addSubview:self.settingTableView];
 
     
@@ -34,11 +33,6 @@
 
 #pragma mark - delegate
 
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    
-    BOOL isShow = [viewController isKindOfClass:[SettingViewController class]];
-    [navigationController setNavigationBarHidden:isShow animated:YES];
-}
 
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -47,7 +41,22 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = self.dataArray[indexPath.section][indexPath.row];
+    cell.textLabel.font = Y_Font(15);
+    cell.textLabel.textColor = Color_Title;
+    if ((indexPath.section == 0 || indexPath.section == 2) && indexPath.row == 0) {
+        cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"june_pay_right_13x13_"]];
+    } else if (indexPath.section == 0 && indexPath.row == 2) {
+        cell.accessoryView = nil;
+    }else if (indexPath.section == 2 && indexPath.row == 1) {
+        cell.accessoryView = nil;
+    }else {
+        UISwitch *swi = [[UISwitch alloc] init];
+        swi.onTintColor = Color_theme;
+        [swi setOn:YES];
+        cell.accessoryView = swi;
+    }
     return cell;
 }
 
@@ -87,7 +96,7 @@
 
 - (NSMutableArray *)dataArray {
     return C_LAZY(_dataArray, ({
-        NSMutableArray *array = [NSMutableArray arrayWithArray:@[@[@"账户与安全",@"漫画更新提醒",@"清楚缓存"],
+        NSMutableArray *array = [NSMutableArray arrayWithArray:@[@[@"账户与安全",@"漫画更新提醒",@"清除缓存"],
                                                                  @[@"WiFi自动下载",@"网络环境提示",@"手机网络下载",@"开启阅读预览图",@"自动更换节日皮肤"],
                                                                  @[@"给我们评分",@"关于我们"]]];
         array;

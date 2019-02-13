@@ -36,6 +36,8 @@
 		667071B821C2530B0064617D /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 667071B721C2530B0064617D /* AdView.m */; };
 		667071BB21C34F9A0064617D /* ADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 667071BA21C34F9A0064617D /* ADModel.m */; };
 		667071BE21C358C30064617D /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667071BD21C358C30064617D /* LaunchViewController.m */; };
+		6677ADA321E7191F002D4ACF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677ADA221E7191F002D4ACF /* LoginViewController.m */; };
+		6677ADA921E72635002D4ACF /* AttributeTouchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677ADA821E72635002D4ACF /* AttributeTouchLabel.m */; };
 		6696E08021BE11920047DA08 /* VipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696E07F21BE11920047DA08 /* VipViewController.m */; };
 		6696E08321BE4C310047DA08 /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696E08221BE4C310047DA08 /* SubscribeViewController.m */; };
 		6696E08621BE601E0047DA08 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6696E08521BE601E0047DA08 /* MoreViewController.m */; };
@@ -77,6 +79,15 @@
 		66C7D92721B51A1A000028F4 /* UpdateItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C7D92621B51A1A000028F4 /* UpdateItemViewController.m */; };
 		66C7D92B21B523C0000028F4 /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C7D92A21B523C0000028F4 /* TimeUtil.m */; };
 		66C7D92E21B52520000028F4 /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C7D92D21B52520000028F4 /* DeviceUtil.m */; };
+		66ED55E92212772000A28530 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED55E82212772000A28530 /* DetailViewController.m */; };
+		66ED55EB2212778800A28530 /* DetailViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 66ED55EA2212778800A28530 /* DetailViewController.xml */; };
+		66ED55EE221298FE00A28530 /* FlexBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED55ED221298FE00A28530 /* FlexBaseViewController.m */; };
+		66ED55F0221299A500A28530 /* FlexNavBarView.xml in Resources */ = {isa = PBXBuildFile; fileRef = 66ED55EF221299A500A28530 /* FlexNavBarView.xml */; };
+		66ED55F322129A7500A28530 /* FlexNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ED55F222129A7500A28530 /* FlexNavBarView.m */; };
+		66F2947C21E8258D000ECE07 /* MyVipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2947B21E8258D000ECE07 /* MyVipViewController.m */; };
+		66F2947F21E82C70000ECE07 /* MyCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2947E21E82C70000ECE07 /* MyCoinViewController.m */; };
+		66F2948521E8317D000ECE07 /* MySubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2948421E8317D000ECE07 /* MySubscribeViewController.m */; };
+		66F2948821E83239000ECE07 /* MyFengYinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2948721E83239000ECE07 /* MyFengYinViewController.m */; };
 		7E5B712A3E53F4E72289BDA4 /* libPods-YouYaoQi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4975641E1536EFEBB24BF86 /* libPods-YouYaoQi.a */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +152,10 @@
 		667071BA21C34F9A0064617D /* ADModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADModel.m; sourceTree = "<group>"; };
 		667071BC21C358C30064617D /* LaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
 		667071BD21C358C30064617D /* LaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		6677ADA121E7191F002D4ACF /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6677ADA221E7191F002D4ACF /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6677ADA721E72635002D4ACF /* AttributeTouchLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeTouchLabel.h; sourceTree = "<group>"; };
+		6677ADA821E72635002D4ACF /* AttributeTouchLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeTouchLabel.m; sourceTree = "<group>"; };
 		6696E07E21BE11920047DA08 /* VipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VipViewController.h; sourceTree = "<group>"; };
 		6696E07F21BE11920047DA08 /* VipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VipViewController.m; sourceTree = "<group>"; };
 		6696E08121BE4C310047DA08 /* SubscribeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscribeViewController.h; sourceTree = "<group>"; };
@@ -218,6 +233,22 @@
 		66C7D92A21B523C0000028F4 /* TimeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
 		66C7D92C21B52520000028F4 /* DeviceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
 		66C7D92D21B52520000028F4 /* DeviceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
+		66ED55E72212772000A28530 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		66ED55E82212772000A28530 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		66ED55EA2212778800A28530 /* DetailViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DetailViewController.xml; sourceTree = "<group>"; };
+		66ED55EC221298FE00A28530 /* FlexBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexBaseViewController.h; sourceTree = "<group>"; };
+		66ED55ED221298FE00A28530 /* FlexBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexBaseViewController.m; sourceTree = "<group>"; };
+		66ED55EF221299A500A28530 /* FlexNavBarView.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FlexNavBarView.xml; sourceTree = "<group>"; };
+		66ED55F122129A7500A28530 /* FlexNavBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexNavBarView.h; sourceTree = "<group>"; };
+		66ED55F222129A7500A28530 /* FlexNavBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexNavBarView.m; sourceTree = "<group>"; };
+		66F2947A21E8258D000ECE07 /* MyVipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVipViewController.h; sourceTree = "<group>"; };
+		66F2947B21E8258D000ECE07 /* MyVipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVipViewController.m; sourceTree = "<group>"; };
+		66F2947D21E82C70000ECE07 /* MyCoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoinViewController.h; sourceTree = "<group>"; };
+		66F2947E21E82C70000ECE07 /* MyCoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoinViewController.m; sourceTree = "<group>"; };
+		66F2948321E8317D000ECE07 /* MySubscribeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySubscribeViewController.h; sourceTree = "<group>"; };
+		66F2948421E8317D000ECE07 /* MySubscribeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySubscribeViewController.m; sourceTree = "<group>"; };
+		66F2948621E83239000ECE07 /* MyFengYinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFengYinViewController.h; sourceTree = "<group>"; };
+		66F2948721E83239000ECE07 /* MyFengYinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFengYinViewController.m; sourceTree = "<group>"; };
 		D4975641E1536EFEBB24BF86 /* libPods-YouYaoQi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YouYaoQi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -244,6 +275,17 @@
 				667071BD21C358C30064617D /* LaunchViewController.m */,
 			);
 			path = AD;
+			sourceTree = "<group>";
+		};
+		6677ADA021E71904002D4ACF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6677ADA121E7191F002D4ACF /* LoginViewController.h */,
+				6677ADA221E7191F002D4ACF /* LoginViewController.m */,
+				6677ADA721E72635002D4ACF /* AttributeTouchLabel.h */,
+				6677ADA821E72635002D4ACF /* AttributeTouchLabel.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		66BBE72E21B8BC3A00B1B249 /* C */ = {
@@ -316,6 +358,9 @@
 				66C7D92621B51A1A000028F4 /* UpdateItemViewController.m */,
 				66B0E9B521C8CD2F0075DA0A /* SearchViewController.h */,
 				66B0E9B621C8CD2F0075DA0A /* SearchViewController.m */,
+				66ED55E72212772000A28530 /* DetailViewController.h */,
+				66ED55E82212772000A28530 /* DetailViewController.m */,
+				66ED55EA2212778800A28530 /* DetailViewController.xml */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -355,6 +400,14 @@
 				667071B321C202AC0064617D /* WalletViewController.m */,
 				66B0E9B221C8A7650075DA0A /* AuthorViewController.h */,
 				66B0E9B321C8A7650075DA0A /* AuthorViewController.m */,
+				66F2947A21E8258D000ECE07 /* MyVipViewController.h */,
+				66F2947B21E8258D000ECE07 /* MyVipViewController.m */,
+				66F2947D21E82C70000ECE07 /* MyCoinViewController.h */,
+				66F2947E21E82C70000ECE07 /* MyCoinViewController.m */,
+				66F2948321E8317D000ECE07 /* MySubscribeViewController.h */,
+				66F2948421E8317D000ECE07 /* MySubscribeViewController.m */,
+				66F2948621E83239000ECE07 /* MyFengYinViewController.h */,
+				66F2948721E83239000ECE07 /* MyFengYinViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -398,6 +451,7 @@
 		66C7D8BD21B4D921000028F4 /* YouYaoQi */ = {
 			isa = PBXGroup;
 			children = (
+				6677ADA021E71904002D4ACF /* Login */,
 				667071B521C252FA0064617D /* AD */,
 				66C7D91A21B51754000028F4 /* Resource */,
 				66C7D90621B50313000028F4 /* Mine */,
@@ -435,10 +489,15 @@
 				66C7D8E021B4DDF9000028F4 /* CBaseTableViewController.m */,
 				66C7D8DE21B4DDF9000028F4 /* CBaseViewController.h */,
 				66C7D8DF21B4DDF9000028F4 /* CBaseViewController.m */,
+				66ED55EC221298FE00A28530 /* FlexBaseViewController.h */,
+				66ED55ED221298FE00A28530 /* FlexBaseViewController.m */,
 				661F6BBB21B5454900EAA33A /* BaseTableViewCell.h */,
 				661F6BBA21B5454900EAA33A /* BaseTableViewCell.m */,
 				663F019F21BA5B2B001906F3 /* NavBarView.h */,
 				663F01A021BA5B2B001906F3 /* NavBarView.m */,
+				66ED55F122129A7500A28530 /* FlexNavBarView.h */,
+				66ED55F222129A7500A28530 /* FlexNavBarView.m */,
+				66ED55EF221299A500A28530 /* FlexNavBarView.xml */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -653,9 +712,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C7D8CE21B4D924000028F4 /* LaunchScreen.storyboard in Resources */,
+				66ED55EB2212778800A28530 /* DetailViewController.xml in Resources */,
 				66C7D91F21B51777000028F4 /* start_guide_page.png in Resources */,
 				66C7D8D821B4DBBD000028F4 /* Images.xcassets in Resources */,
 				66C7D8CB21B4D924000028F4 /* Assets.xcassets in Resources */,
+				66ED55F0221299A500A28530 /* FlexNavBarView.xml in Resources */,
 				66C7D92121B51777000028F4 /* start_guide_page2.png in Resources */,
 				66C7D8C621B4D921000028F4 /* Main.storyboard in Resources */,
 				66C7D92021B51777000028F4 /* start_guide_page_x.png in Resources */,
@@ -689,16 +750,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YouYaoQi/Pods-YouYaoQi-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-YouYaoQi/Pods-YouYaoQi-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FlexLib/FlexLib.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/QMUIKit/QMUIKit/QMUIResources/QMUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FlexLib.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QMUIResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouYaoQi/Pods-YouYaoQi-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YouYaoQi/Pods-YouYaoQi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -723,7 +788,10 @@
 				66C7D8C321B4D921000028F4 /* ViewController.m in Sources */,
 				667071AE21C1EB9B0064617D /* SettingViewController.m in Sources */,
 				66C7D8C021B4D921000028F4 /* AppDelegate.m in Sources */,
+				66F2948821E83239000ECE07 /* MyFengYinViewController.m in Sources */,
 				661F6BBC21B5454900EAA33A /* BaseTableViewCell.m in Sources */,
+				66F2947C21E8258D000ECE07 /* MyVipViewController.m in Sources */,
+				66F2948521E8317D000ECE07 /* MySubscribeViewController.m in Sources */,
 				667071B421C202AC0064617D /* WalletViewController.m in Sources */,
 				663F019B21BA0827001906F3 /* RankTableViewCell.m in Sources */,
 				66C7D90121B50172000028F4 /* NSData+YExt.m in Sources */,
@@ -748,25 +816,31 @@
 				661F6BF121B7733E00EAA33A /* FindTitleTableViewCell.m in Sources */,
 				66C7D8ED21B4DFD9000028F4 /* APIConst.m in Sources */,
 				6696E08021BE11920047DA08 /* VipViewController.m in Sources */,
+				6677ADA321E7191F002D4ACF /* LoginViewController.m in Sources */,
 				661F6BCA21B60F8000EAA33A /* UIColor+YExt.m in Sources */,
 				66B0E9B421C8A7650075DA0A /* AuthorViewController.m in Sources */,
 				661F6BE821B67B9400EAA33A /* DateSegmentView.m in Sources */,
+				66ED55F322129A7500A28530 /* FlexNavBarView.m in Sources */,
 				663F01A121BA5B2B001906F3 /* NavBarView.m in Sources */,
 				66B0E9BD21CB47BE0075DA0A /* GlobalUtil.m in Sources */,
 				66C7D92B21B523C0000028F4 /* TimeUtil.m in Sources */,
+				6677ADA921E72635002D4ACF /* AttributeTouchLabel.m in Sources */,
 				66C7D8FB21B50028000028F4 /* NSString+YExt.m in Sources */,
 				661F6BBF21B5458400EAA33A /* UpdateItemCell.m in Sources */,
 				661F6BD621B660D700EAA33A /* SkinTableViewCell.m in Sources */,
 				66C7D8E421B4DDF9000028F4 /* CBaseTableViewController.m in Sources */,
+				66ED55E92212772000A28530 /* DetailViewController.m in Sources */,
 				667071B121C1EE230064617D /* DefaultsUtil.m in Sources */,
 				663F019821BA072B001906F3 /* RankItemViewController.m in Sources */,
 				66BBE73C21B8BE6E00B1B249 /* RewardModel.m in Sources */,
 				6696E08921BE64BC0047DA08 /* MoreModel.m in Sources */,
 				661F6BCD21B6520700EAA33A /* SkinViewController.m in Sources */,
+				66ED55EE221298FE00A28530 /* FlexBaseViewController.m in Sources */,
 				661F6BEB21B67CA900EAA33A /* NSCalendar+YExt.m in Sources */,
 				661F6BFA21B7B33300EAA33A /* FindADTableViewCell.m in Sources */,
 				661F6BE521B6708B00EAA33A /* UIImage+YExt.m in Sources */,
 				661F6BC521B5475900EAA33A /* ComicModel.m in Sources */,
+				66F2947F21E82C70000ECE07 /* MyCoinViewController.m in Sources */,
 				661F6BEE21B761E700EAA33A /* BannerItemModel.m in Sources */,
 				661F6C0021B7C52E00EAA33A /* FindMixTableViewCell.m in Sources */,
 				661F6BF421B783E900EAA33A /* FindFourItemTableViewCell.m in Sources */,

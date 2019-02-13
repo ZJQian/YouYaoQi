@@ -12,6 +12,7 @@
 #define advertiseImage      @"adImage"
 #define firstIn             @"First_in"
 #define skinType            @"skin_type"
+#define userID              @"USER_ID"
 
 
 @implementation DefaultsUtil
@@ -44,6 +45,20 @@
     
     return ![self getValueWithKey:firstIn] ? YES : NO;
 }
+
+
++ (void)saveUserID:(NSString *)userId {
+    [self saveWithKey:userID value:userId];
+}
+
++ (BOOL)isLogin {
+    NSString *userId = [self getValueWithKey:userID];
+    if (userId == nil || [userId isEqualToString:@""]) {
+        return NO;
+    }
+    return YES;
+}
+
 
 
 + (NSString *)getAdvertise {

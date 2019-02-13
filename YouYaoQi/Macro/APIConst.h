@@ -58,6 +58,10 @@ FOUNDATION_EXTERN NSString *const commonComicList;
 FOUNDATION_EXTERN NSString *const hotkeywordsnew;
 
 
+///广告
+FOUNDATION_EXTERN NSString *const adLocat;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,12 +8,16 @@
 
 #import "CBaseViewController.h"
 
-@interface CBaseViewController ()
+@interface CBaseViewController ()<UINavigationControllerDelegate>
 
 @end
 
 @implementation CBaseViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.delegate = self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -25,7 +29,7 @@
     _isCustomNav = isCustomNav;
     
     if (isCustomNav) {
-        NavBarView *nav = [[NavBarView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, IS_IPHONEX ? 84.0 : 60.0)];
+        NavBarView *nav = [[NavBarView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, Nav_Custom_Height)];
         [self.view addSubview:nav];
         self.navView = nav;
         [self.navView.btn_left addTarget:self action:@selector(leftAction) forControlEvents:UIControlEventTouchUpInside];
@@ -37,6 +41,10 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    BOOL isShow = [viewController isKindOfClass:[CBaseViewController class]];
+    [navigationController setNavigationBarHidden:isShow animated:YES];
+}
 
 @end
